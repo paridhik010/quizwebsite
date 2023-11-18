@@ -1,0 +1,83 @@
+
+/* PAGE & BODY */
+* {
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center; justify-content: center;
+  min-height: 100vh;
+  background-image: url(https://wallpapers.com/images/hd/dark-pier-sunset-kbxk8msdqc8rhxzc.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+/* WIDGET */
+.widget-wrap {
+  width: 600px;
+  padding: 30px; 
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/* FOOTER */
+#code-boxx {
+  font-weight: 600;
+  margin-top: 30px;
+}
+#code-boxx a {
+  display: inline-block;
+  border: 0;
+  padding: 5px;
+  text-decoration: none;
+  background: #dd7878;
+  color: #fff;
+}
+/* (A) WRAPPER */
+#quizWrap {
+  max-width: 600px;
+  margin: 0 auto;
+  /* RECOMMENDED FIXED HEIGHT IF YOU HAVE CONTENT BELOW THE QUIZ */
+  /* SO THAT PAGE LAYOUT DOES NOT "JUMP" */
+  /* height: 250px; */
+}
+
+/* (B) QUESTION */
+#quizQn {
+  padding: 20px;
+  background: #35627a;
+  color: rgb(4, 5, 4);
+  font-size: 24px;
+  border-radius: 5px;
+}
+
+/* (C) ANSWERS */
+#quizAns {
+  margin: 10px 0;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+}
+#quizAns input[type=radio] { display: none; }
+#quizAns label {
+  background: #a29696;
+  border: 1px solid #a39696;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+}
+#quizAns label.correct {
+  background: #9fd385;
+  border: 1px solid #60a03f;
+}
+#quizAns label.wrong {
+  background: rgb(202, 86, 60);
+  border: 1px solid #c78181;
+}
+
